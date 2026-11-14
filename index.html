@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="AdabX؛ فضایی برای کشف، فهم و تجربهٔ ادبیات فارسی.">
+<title>AdabX — ادبیات، فراتر از حفظ کردن</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#111a2d;--line:#25314a;--text:#f4f6fb;--muted:#a5b0c5;--mint:#b9f18a;--blue:#8daeff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 5%,#1a3150 0,transparent 34%),radial-gradient(ellipse at 12% 55%,#17243a 0,transparent 30%),var(--bg);color:var(--text);font-family:Vazirmatn,system-ui,sans-serif;line-height:1.9;min-height:100vh}
+a{color:inherit;text-decoration:none}.shell{width:min(1120px,calc(100% - 40px));margin:auto}
+header{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}
+.logo{direction:ltr;font-size:25px;font-weight:900;letter-spacing:-1.5px}.logo span{color:var(--mint)}.nav{display:flex;gap:26px;color:var(--muted);font-size:13px}.nav a:hover{color:var(--mint)}
+.pill{font-size:11px;color:var(--mint);border:1px solid #b9f18a44;border-radius:100px;padding:5px 12px;background:#b9f18a0b}
+.hero{min-height:620px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;padding:70px 0 85px}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--mint);font-size:12px;font-weight:700;letter-spacing:.2px}.dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 18px var(--mint)}
+h1{font-size:clamp(42px,6.5vw,76px);line-height:1.35;letter-spacing:-2px;margin:20px 0 15px;font-weight:900}h1 em{font-style:normal;color:var(--mint)}
+.lead{max-width:570px;color:var(--muted);font-size:15px;line-height:2.3;margin:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;padding:11px 19px;border-radius:11px;font-size:13px;font-weight:800;transition:.2s}.primary{background:var(--mint);color:#111a18}.primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px #b9f18a22}.secondary{border:1px solid var(--line);color:var(--text)}.secondary:hover{border-color:var(--mint);color:var(--mint)}
+.visual{height:390px;position:relative;display:grid;place-items:center;isolation:isolate}.ring{position:absolute;width:310px;height:310px;border:1px solid #b9f18a35;border-radius:50%;transform:rotate(-25deg)}.ring:before,.ring:after{content:"";position:absolute;inset:23px;border:1px solid #8daeff27;border-radius:50%}.ring:after{inset:55px;border-color:#b9f18a24}
+.core{width:190px;height:230px;border-radius:22px;background:linear-gradient(145deg,#263b55,#121b2c 72%);border:1px solid #b9f18a70;box-shadow:0 30px 90px #0008, inset 0 1px #ffffff25;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-7deg);position:relative}.core:before{content:"";position:absolute;inset:10px;border:1px solid #ffffff12;border-radius:15px}.glyph{font-size:66px;font-weight:900;color:var(--mint);line-height:1.4}.core small{direction:ltr;letter-spacing:5px;color:#c5d0e3;font-size:11px}.float{position:absolute;padding:9px 13px;border:1px solid #34425c;background:#121c2eeb;border-radius:10px;font-size:11px;color:#d9e3f4;box-shadow:0 10px 30px #0004}.f1{top:43px;right:0}.f2{bottom:48px;left:0}.f3{top:50%;left:4px;color:var(--mint)}
+.section{padding:75px 0;border-top:1px solid #ffffff12}.section-head{max-width:650px;margin-bottom:28px}.eyebrow{font-size:11px;color:var(--mint);font-weight:800;letter-spacing:1px}.section h2{font-size:clamp(25px,4vw,38px);line-height:1.5;margin:8px 0 10px}.section-head p{color:var(--muted);font-size:13px;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:23px;border:1px solid var(--line);background:linear-gradient(145deg,#ffffff08,#ffffff02);border-radius:16px;min-height:190px}.icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid #b9f18a35;background:#b9f18a0d;border-radius:12px;color:var(--mint);font-size:19px}.card h3{font-size:16px;margin:16px 0 5px}.card p{font-size:12px;color:var(--muted);line-height:2.1;margin:0}
+.statement{border:1px solid #b9f18a35;background:linear-gradient(110deg,#b9f18a0d,#8daeff08);border-radius:20px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:30px}.statement strong{font-size:clamp(19px,3vw,28px);line-height:1.7}.statement span{color:var(--mint);font-size:12px;white-space:nowrap}
+footer{border-top:1px solid #ffffff12;padding:25px 0 35px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:11px}.footlogo{direction:ltr;color:var(--text);font-weight:900;font-size:15px}.footlogo b{color:var(--mint)}
+@media(max-width:760px){.nav{display:none}.hero{grid-template-columns:1fr;gap:10px;padding:55px 0 65px}.visual{height:300px;grid-row:1}.core{width:155px;height:190px}.glyph{font-size:55px}.ring{width:250px;height:250px}.hero h1{font-size:48px}.cards{grid-template-columns:1fr}.card{min-height:0}.statement{align-items:flex-start;flex-direction:column}.section{padding:55px 0}}
+@media(max-width:390px){.shell{width:calc(100% - 28px)}.hero h1{font-size:40px}.visual{height:265px}}
+</style>
+</head>
+<body>
+<header class="shell">
+  <a class="logo" href="#" aria-label="AdabX home">Adab<span>X</span></a>
+  <nav class="nav" aria-label="ناوبری اصلی"><a href="#about">دربارهٔ AdabX</a><a href="#vision">چشم‌انداز</a></nav>
+  <span class="pill">به‌زودی</span>
+</header>
+<main class="shell">
+  <section class="hero">
+    <div>
+      <div class="kicker"><i class="dot"></i> دنیای تازه‌ای از ادبیات فارسی</div>
+      <h1>ادبیات را<br><em>زندگی کن.</em></h1>
+      <p class="lead">AdabX جایی برای فراتر رفتن از حفظ کردن است؛ فضایی برای کشف زیبایی واژه‌ها، فهم لایه‌های پنهان متن و لذت بردن از فکر کردن به ادبیات.</p>
+      <div class="actions"><a class="button primary" href="#about">AdabX را بشناس ↙</a><a class="button secondary" href="#vision">چشم‌انداز ما</a></div>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="ring"></div><div class="core"><div class="glyph">ادب</div><small>ADABX</small></div>
+      <span class="float f1">واژه‌ها، فراتر از معنا</span><span class="float f2">کشف · تحلیل · یادگیری</span><span class="float f3">✳</span>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <div class="section-head"><div class="eyebrow">ABOUT ADABX</div><h2>یک تجربهٔ تازه برای دوست‌داران ادبیات</h2><p>قرار است ادبیات از یک درس ساده، به دنیایی برای پرسیدن، کشف کردن و عمیق‌تر دیدن تبدیل شود.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">⌕</div><h3>کشف</h3><p>با واژه‌ها، مفهوم‌ها و ظرافت‌هایی روبه‌رو شو که شاید در نگاه اول دیده نشوند.</p></article>
+      <article class="card"><div class="icon">◇</div><h3>درک عمیق‌تر</h3><p>به‌جای تکیه بر حفظ کردن، ارتباط میان معنا، زبان و زیبایی متن را پیدا کن.</p></article>
+      <article class="card"><div class="icon">✳</div><h3>یادگیری با فکر</h3><p>تمرین و تجربه‌ای که کنجکاوی را زنده نگه می‌دارد و ذهن را به چالش می‌کشد.</p></article>
+    </div>
+  </section>
+  <section class="section" id="vision">
+    <div class="statement"><strong>هدف فقط دانستن ادبیات نیست؛<br>دیدن چیزهایی است که در کلمات پنهان‌اند.</strong><span>ADABX · COMING SOON</span></div>
+  </section>
+</main>
+<footer class="shell"><span class="footlogo">Adab<b>X</b></span><span>ادبیات، فراتر از حفظ کردن.</span><span>نسخهٔ آغازین · ۲۰۲۶</span></footer>
+</body>
+</html>
