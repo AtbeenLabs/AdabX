@@ -18,10 +18,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
       - uses: actions/configure-pages@v5
       - run: npm install
-      - run: npm run build
+      - name: Build application
+        run: npm run build
+        env:
+          VITE_AI_ENDPOINT: ${{ secrets.VITE_AI_ENDPOINT }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
