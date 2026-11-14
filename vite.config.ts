@@ -22,7 +22,8 @@ export default defineConfig({
         start_url: '/AdabX/',
         scope: '/AdabX/',
         icons: [
-          { src: '/AdabX/favicon.svg', sizes: '192x192', type: 'image/svg+xml', purpose: 'any' },\n          { src: '/AdabX/favicon.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any' }
+          { src: '/AdabX/favicon.svg', sizes: '192x192', type: 'image/svg+xml', purpose: 'any' },
+          { src: '/AdabX/favicon.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any' }
         ]
       },
       workbox: {
