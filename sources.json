@@ -1,0 +1,26 @@
+{
+  "project": "AdabX",
+  "scope": "Persian grade 8",
+  "textbook": {
+    "title": "فارسی پایهٔ هشتم",
+    "edition": "چاپ سیزدهم",
+    "year": 1405,
+    "publisher": "وزارت آموزش و پرورش",
+    "basis": "فهرست درس‌ها و صفحات آغازین بررسی‌شده؛ درس‌نامه‌های تکمیلی به‌تدریج باید با متن دقیق کتاب تکمیل شوند."
+  },
+  "olympiad": [
+    {
+      "title": "سی‌وششمین المپیاد ادبی",
+      "stage": "مرحلهٔ اول",
+      "year": 1401,
+      "questions": 100,
+      "durationMinutes": 120,
+      "pdf": "https://www.irysc.com/wp-content/uploads/2024/01/%D9%85%D8%B1%D8%AD%D9%84%D9%87-%D8%A7%D9%88%D9%84-%D8%A7%D9%84%D9%85%D9%BE%DB%8C%D8%A7%D8%AF-%D8%A7%D8%AF%D8%A8%DB%8C-1401.pdf",
+      "note": "سایت فقط فهرست موضوعی ۹ پرسش نخست را نمایش می‌دهد؛ متن سؤال و گزینه‌ها در PDF اصلی است. پاسخ‌نامهٔ تأییدشده درج نشده است."
+    }
+  ],
+  "contentPolicy": {
+    "practiceQuestions": "originally authored for AdabX; not official exam questions",
+    "textbookReproduction": "No full textbook passages reproduced"
+  }
+}
