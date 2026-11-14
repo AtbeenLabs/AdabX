@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-export type Attempt = { id: string; at: string; topic: string; total: number; correct: number; seconds: number };
+export type Attempt = { id: string; at: string; topic: string; total: number; correct: number; seconds: number; breakdown?: Array<{ topic: string; total: number; correct: number }> };
 type State = {
   completedLessons: number[]; attempts: Attempt[]; answered: number; correct: number; streak: number;
   markLesson: (id: number) => void; addAttempt: (attempt: Attempt) => void; reset: () => void;
