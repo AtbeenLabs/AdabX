@@ -7,7 +7,7 @@ type State = {
   importData: (data: Partial<Pick<State,'completedLessons'|'attempts'|'answered'|'correct'|'streak'>>) => void;
 };
 export const useProgress = create<State>()(persist((set) => ({
-  completedLessons:[1,2], attempts:[], answered:0, correct:0, streak:0,
+  completedLessons:[], attempts:[], answered:0, correct:0, streak:0,
   markLesson:(id)=>set(s=>({completedLessons:s.completedLessons.includes(id)?s.completedLessons.filter(x=>x!==id):[...s.completedLessons,id]})),
   addAttempt:(attempt)=>set(s=>({attempts:[attempt,...s.attempts].slice(0,100),answered:s.answered+attempt.total,correct:s.correct+attempt.correct,streak:attempt.correct===attempt.total?s.streak+1:0})),
   reset:()=>set({completedLessons:[],attempts:[],answered:0,correct:0,streak:0}),
