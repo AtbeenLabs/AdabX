@@ -1,0 +1,9 @@
+name = "adabx-assistant"
+main = "index.ts"
+compatibility_date = "2026-11-14"
+[vars]
+AI_MODEL = "gpt-4o-mini"
+ALLOWED_ORIGIN = "https://atbeenlabs.github.io"
+# Configure a secret after creating the Worker:
+# wrangler secret put AI_API_KEY
+# Optional: wrangler secret put AI_API_URL
